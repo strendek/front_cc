@@ -1,0 +1,85 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# logs
+/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Angular files
+.angular
+.angular-cache
+
+# Firebase cache
+.firebaserc
+.firebase/
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# angular build (Angular 6+)
+/angular.json
+
+# Angular Doc
+/documentation/
+
+# Local History for Visual Studio Code
+.history/
+
+# misc
+*.jar
+*.war
+/awcache
+/awconfig
+/*.svg
+/*.js
+/*.map
