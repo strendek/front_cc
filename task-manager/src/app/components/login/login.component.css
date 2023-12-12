@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('src/assets/Space_Grotesk/static/SpaceGrotesk-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+#mainDiv {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm input[type="text"], 
+#loginForm input[type="password"] {
+    height: 45px; 
+    border: 1px solid #136880;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'SpaceGrotesk';
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+#loginForm input[type="text"]:focus, 
+#loginForm input[type="password"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+#loginForm button {
+    cursor: pointer;
+    height: 45px;
+    border: 1px solid #136880;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #136880;
+    font-family: 'SpaceGrotesk';
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#loginForm button:hover {
+    background-color: #e8f0f2;
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    color: #0056b3;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'SpaceGrotesk';
+    font-weight: 700;
+  }
+
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: 136880;
+  }
+  
+  .mat-progress-spinner {
+    color: white;
+  }

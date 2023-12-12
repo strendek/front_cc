@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+}
+
+#majorDiv {
+    background-color: #136880;
+    margin: 15px 0px 0px 0px;
+    width: 140px;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+p {
+    font-family: 'SpaceGrotesk';
+    color: #FFFFFF;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navBarMenuOption {
+    transition: background-color 0.3s ease;
+    width: 100px;
+    padding: 1px 20px 1px 20px;
+}
+
+.navBarMenuOption:hover {
+    background-color: #FFFFFF;
+}
+
+.navBarMenuOption:hover p {
+    color: #136880;
+}

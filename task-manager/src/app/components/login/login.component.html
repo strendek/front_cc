@@ -1,0 +1,17 @@
+<div id="login-container">
+  <div id="mainDiv">
+    <h1 *ngIf="!isLoading">Task Manager</h1>
+    <div class="form-container" *ngIf="!isLoading">
+      <form id="loginForm">
+        <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="username" maxlength="50" required>
+        <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password" maxlength="50" required>
+        <button type="submit" (click)="onSubmit()">Login</button>
+      </form>
+    </div>
+    <div class="spinner-container" *ngIf="isLoading">
+        <mat-spinner color="primary"></mat-spinner>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Light.ttf');
+    font-weight: 100; 
+    font-style: normal;
+}
+
+#mainDiv {
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start; 
+    align-items: start;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'SpaceGrotesk';
+    padding: 15px 15px 15px 15px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    padding: 0 0 0 15px;
+    border-radius: 5px;
+}
+
+#descriptionForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#descriptionForm textarea {
+    height: 200px; 
+    border: 1px solid #136880;
+    border-radius: 4px; 
+    padding: 5px 10px;
+    margin-bottom: 10px; 
+    font-size: 16px;
+    box-sizing: border-box; 
+    resize: none;
+}
+
+#descriptionForm textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+#descriptionForm button {
+    cursor: pointer;
+    height: 45px; 
+    border: 1px solid #136880;
+    border-radius: 4px; 
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #136880;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+}
+
+#descriptionForm textarea, #descriptionForm button {
+    font-family: 'SpaceGrotesk'; 
+    font-weight: 100; 
+}
+
+#descriptionForm button:hover {
+    background-color: #e8f0f2;
+}
+
+#descriptionForm button span {
+    visibility: visible;
+}
+
+#descriptionForm button span[hidden] {
+    visibility: hidden;
+}
+
+.spinner-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vh;
+    background-color: white;
+}
+
+.mat-spinner {
+    color: red;
+    margin-right: 5px;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #FF0000;
+}
+
+#descriptionForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#descriptionForm input, #descriptionForm select {
+    height: 45px; 
+    border: 1px solid #136880;
+    border-radius: 4px; 
+    padding: 5px 10px;
+    margin-bottom: 10px; 
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#descriptionForm input:focus, #descriptionForm select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+#descriptionForm button {
+    cursor: pointer;
+    height: 45px; 
+    border: 1px solid #136880;
+    border-radius: 4px; 
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #136880;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-sizing: border-box; 
+}
+
+#descriptionForm button:hover {
+    background-color: #e8f0f2;
+}
+
+#descriptionForm input, #descriptionForm button, #descriptionForm select {
+    font-family: 'SpaceGrotesk'; 
+    font-weight: 100; 
+}
+
+#descriptionForm button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px; 
+    border: 1px solid #136880;
+    border-radius: 4px; 
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #136880;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#descriptionForm button:hover {
+    background-color: #e8f0f2;
+}
+
+#descriptionForm button span, .mat-spinner {
+    margin: auto; 
+}

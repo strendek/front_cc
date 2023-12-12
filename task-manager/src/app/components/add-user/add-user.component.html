@@ -1,0 +1,19 @@
+<div id="mainDiv">
+  <h2>Add user</h2>
+  <div class="form-container">
+    <form id="descriptionForm" (ngSubmit)="onSubmit()">
+      <input type="text" id="description" name="description" placeholder="Username (1-50)" [(ngModel)]="userUsername" maxlength="50" required>
+      <input type="password" id="description2" name="description2" placeholder="Password (1-50)" [(ngModel)]="userPassword" maxlength="50" required>
+      <input type="text" id="description3" name="description3" placeholder="Name (1-50)" [(ngModel)]="userName" maxlength="50" required>
+      <select id="role" name="role" [(ngModel)]="userRole" required>
+        <option value="" disabled selected>Role</option>
+        <option value="Admin">Admin</option>
+        <option value="Regular">Regular</option>
+      </select>
+      <button type="submit" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Confirm</span>
+        <mat-spinner *ngIf="isLoading" diameter="20"></mat-spinner>
+      </button>
+    </form>
+  </div>
+</div>

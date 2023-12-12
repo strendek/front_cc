@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/src/assets/Space_Grotesk/static/SpaceGrotesk-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  #mainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  h2 {
+    color: #FFFFFF;
+    font-family: 'SpaceGrotesk';
+    padding: 15px 15px 15px 15px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    align-self: flex-start;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 0 0 15px;
+  }
+  
+  #userTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #userTable th, #userTable td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #136880;
+    font-family: 'SpaceGrotesk', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  
+  #userTable th {
+    background-color: #136880;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  #userTable tr {
+    background-color: #f2f2f2;
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .mat-progress-spinner {
+    color: #0056b3;
+  }
+  
+  .mat-table {
+    width: 100%;
+  }
+  
+  .mat-header-row, .mat-row {
+    min-height: 48px;
+  }
+  
+  .mat-cell, .mat-header-cell {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .update-fab, .delete-fab {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 4px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .update-fab {
+    background-color: #cca800;
+    color: #fff;
+  }
+  
+  .delete-fab {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .mat-fab .mat-icon {
+    line-height: 1;
+    width: auto;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mat-button-ripple {
+    display: none;
+  }
+  
+  .mat-button:focus::after {
+    display: none;
+  }
+  

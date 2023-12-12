@@ -1,0 +1,15 @@
+<div id="mainDiv">
+
+  <h2>Add task</h2>
+
+  <div class="form-container">
+    <form id="descriptionForm" (ngSubmit)="onSubmit()">
+      <textarea id="description" name="description" placeholder="Description (1-250)" [(ngModel)]="taskDescription" maxlength="250" required></textarea>
+      <button type="submit" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Confirm</span>
+        <mat-spinner *ngIf="isLoading" diameter="20"></mat-spinner>
+      </button>
+    </form>
+  </div>
+
+</div>

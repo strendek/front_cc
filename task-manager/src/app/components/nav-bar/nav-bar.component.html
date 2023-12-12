@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <div id="majorDiv">
+    <div>
+      <div *ngIf="showViewUsers" (click)="viewUsersClicked()" class="navBarMenuOption">
+        <p>VIEW USERS</p>
+      </div>
+      <div *ngIf="showAddUser" (click)="addUserClicked()" class="navBarMenuOption">
+        <p>ADD USER</p>
+      </div>
+    </div>
+    <div  *ngIf="showViewTasks" (click)="viewTasksClicked()" class="navBarMenuOption">
+      <p>VIEW TASKS</p>
+    </div>
+    <div  *ngIf="showAddTask" (click)="addTaskClicked()" class="navBarMenuOption">
+      <p>ADD TASK</p>
+    </div>
+    <div  (click)="logoutClicked()" class="navBarMenuOption">
+      <p>LOG OUT</p>
+    </div>
+  </div>
+</html>
